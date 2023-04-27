@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +16,18 @@
 </head>
 
 <body>
+
+    <style>
+        body {
+         
+            background-image: url(https://images.unsplash.com/photo-1534470397273-a1c104354754?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80);
+  background-size:auto;
+                 
+         }
+    </style>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Epic Task</a>
+            <a class="navbar-brand" href="#">Cadastrar receitas </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -32,7 +42,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Tarefa
+                            Status cozinha
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Pendentes</a></li>
@@ -53,186 +63,55 @@
         </div>
     </nav>
     <main class=" container">
-
-        <div class="row mt-2 ">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Título " aria-label="Título">
-            </div>
-            <div class="col">
-                <input type="number" class="form-control" placeholder="Pontos" aria-label="pontos">
-            </div>
-
-            <div class="col-4"><select class="form-select" aria-label="Seleciona a categoria">
-                    <option selected>Seleciona a categoria</option>
-                    <option value="1">Estudos</option>
-                    <option value="2">Trabalhos</option>
-                    <option value="3">Lazer</option>
-                </select>
-            </div>
-            <div class="col">
-                <button type="button" class="btn btn-primary">Salvar</button>
-            </div>
-        </div>
-
-        <div class="row">
-
-
-            <div class="card col-lg-3 col-md-6 col-sm-12">
-                <div class="card-header">
-                    Estudar Progamaçao web
-                </div>
-                <div class="card-body">
-
-
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
-                    <p class="card-text">Estudos</p>
-                    <span class="badge text-bg-warning">150 Pontos </span>
-
-
-                </div>
-
-                <div class="card-footer">
-
-                    <a href="#" class="btn btn-success" title="Marcar como concluida"><i class="bi bi-check"> </i></a>
-                    <a href="#" class="btn btn-danger" title="apagar tarefas"><i class="bi bi-trash3"> </i></a>
-
-
-                </div>
-            </div>
-
-            <div class="card col-lg-3 col-md-6 col-sm-12">
-
-                <div class="card-header">
-                    Estudar HTML
-                </div>
-                <div class="card-body">
-
-
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
-                    <p class="card-text">Estudos</p>
-                    <span class="badge text-bg-warning">150 Pontos </span>
-
-
-                </div>
-
-                <div class="card-footer">
-
-                    <a href="#" class="btn btn-success" title="Marcar como concluida"><i class="bi bi-check"> </i></a>
-                    <a href="#" class="btn btn-danger" title="apagar tarefas"><i class="bi bi-trash3"> </i></a>
-
-
-                </div>
-            </div>
-
-            <div class="card col-lg-3 col-md-6 col-sm-12">
-                <div class="card-header">
-                    Estudar ALGORITMOS
-                </div>
-                <div class="card-body">
-
-
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
-                    <p class="card-text">Estudos</p>
-                    <span class="badge text-bg-warning">150 Pontos </span>
-
-
-                </div>
-
-                <div class="card-footer">
-
-                    <a href="#" class="btn btn-success" title="Marcar como concluida"><i class="bi bi-check"> </i></a>
-                    <a href="#" class="btn btn-danger" title="apagar tarefas"><i class="bi bi-trash3"> </i></a>
-
-
-                </div>
-
-
-            </div>
-            <div class="card col-lg-3 col-md-6 col-sm-12">
-                <div class="card-header">
-                    Estudar JAVA
-                </div>
-                <div class="card-body">
-
-
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
-                    <p class="card-text">Estudos</p>
-                    <span class="badge text-bg-warning">150 Pontos </span>
-
-
-                </div>
-
-                <div class="card-footer">
-
-                    <a href="#" class="btn btn-success" title="Marcar como concluida"><i class="bi bi-check"> </i></a>
-                    <a href="#" class="btn btn-danger" title="apagar tarefas"><i class="bi bi-trash3"> </i></a>
-
-
-                </div>
-            </div>
-
-            <div class="card col-lg-3 col-md-6 col-sm-12">
-
-                <div class="card-header">
-                    Estudar JAVA SCript
-                </div>
-                <div class="card-body">
-
-
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
-                    <p class="card-text">Estudos</p>
-                    <span class="badge text-bg-warning">150 Pontos </span>
-
-
-                </div>
-
-                <div class="card-footer">
-
-                    <a href="#" class="btn btn-success" title="Marcar como concluida"><i class="bi bi-check"> </i></a>
-                    <a href="#" class="btn btn-danger" title="apagar tarefas"><i class="bi bi-trash3"> </i></a>
-
-
-                </div>
-            </div>
-
-            <div class="card col-lg-3 col-md-6 col-sm-12">
-                <div class="card-header">
-                    Estudar CSS
-                </div>
-                <div class="card-body">
-
-
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
-                    <p class="card-text">Estudos</p>
-                    <span class="badge text-bg-warning">150 Pontos </span>
-
-
-                </div>
-
-                <div class="card-footer">
-
-                    <a href="#" class="btn btn-success" title="Marcar como concluida"><i class="bi bi-check"> </i></a>
-                    <a href="#" class="btn btn-danger" title="apagar tarefas"><i class="bi bi-trash3"> </i></a>
-
-
-                </div>
-
-
-            </div>
-
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Cadastrar receitas
+        </button>
+
+        <div id="cadastros" class="row mx-auto my-2 g-9">
 
         </div>
-
-
     </main>
+    <!-- Button trigger modal -->
 
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastrar receitas</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mt-2 g-3 ">
+                        <div class="col-12">
+                            <input id="titulo" type="text" class="form-control" placeholder="Título "
+                                aria-label="Título">
+                        </div>
+                        <div class="col-12">
+                            <input id="diculdade" type="number" class="form-control" placeholder="diculdade"
+                                aria-label="diculdade">
+                        </div>
+
+                        <div class="col-12"><select id="categoria" class="form-select"
+                                aria-label="Seleciona a categoria">
+                                <option selected>Seleciona a categoria</option>
+                                <option value="saidas">saidas</option>
+                                <option value="sobremessas">Sobremessas</option>
+                                <option value="entradas ">Entradas</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button id="salvar" gtype="button" class="btn btn-primary">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/crud.js"></script>
 </body>
 
 </html>
