@@ -1,14 +1,48 @@
 document.querySelector("#salvar").addEventListener("click", cadastrar)
+
+let cadastros = []
+
+window.addEventListener("load", () => {
+    cadastros = JSON.parse(localStorage.getItem("cadastros")) || []
+    atualizar()
+})
+
+function atualizar() {
+    document.querySelector("#cadastros").innerHTML = ""
+    cadastros.forEach(cadastro=>
+        document.querySelector("#cadastros").innerHTML += (criarCard(cadastro)))
+}
+
 function cadastrar() {
 
     const titulo = document.querySelector("#titulo").value
     const diculdade = document.querySelector("#diculdade").value
     const categoria = document.querySelector("#categoria").value
+    const modal = bootstrap.Modal.getInstance(document.querySelector("#exampleModal"))
 
-    const cadastro = { titulo: titulo, diculdade: diculdade, categoria: categoria }
-
-    document.querySelector("#cadastros").innerHTML +=criarCard(cadastro)
+    const cadastro = { //JSON Java Script Object Notation
+        titulo: titulo, diculdade: diculdade, categoria: categoria
+    }
+    if (!isValid(cadastro.titulo, document.querySelector("#titulo"))) return
+    if (!isValid(cadastro.diculdade, document.querySelector("#diculdade"))) return
+    cadastros.push(cadastro)
+    localStorage.setItem("cadastros", JSON.stringify(cadastros))
+    atualizar()
+    modal.hide()
 }
+
+function isValid(valor, campo) {
+    if (valor.length == 0) {
+        campo.classList.add("is-invalid")
+        campo.classList.remove("is-valid")
+        return false
+    } else {
+        campo.classList.add("is-valid")
+        campo.classList.remove("is-invalid")
+        return true
+    }
+}
+
 function apagar(botao) {
     botao.parentNode.parentNode.parentNode.remove()
 
